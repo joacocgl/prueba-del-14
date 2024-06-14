@@ -1,15 +1,18 @@
 <?php
 
-$inventario = [];
-function agregarProducto($nombre, $precio, $cantidad, $modelo) {
-    global $inventario;
-
+$productos = [];
+function agregarProducto(&$productos, $nombre, $valor, $modelo, $cantidad) {
     $producto = [
-        'nombre' => $nombre,
-        'precio' => $precio,
-        'cantidad' => $cantidad,
-        'modelo' => $modelo
+        "nombre" => $nombre,
+        "valor" => $valor,
+        "modelo" => $modelo,
+        "cantidad" => $cantidad
     ];
 
-    $inventario[] = $producto;
+    $productos[] = $producto;
+
+    echo "Producto agregado exitosamente.\n";
 }
+
+print_r($productos);
+?>
