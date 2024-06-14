@@ -3,10 +3,10 @@
 $productos = [];
 function agregarProducto(&$productos, $nombre, $valor, $modelo, $cantidad) {
     $producto = [
-        "nombre" => $nombre,
-        "valor" => $valor,
-        "modelo" => $modelo,
-        "cantidad" => $cantidad
+       "nombre" => $nombre,
+       "valor" => $valor,
+       "modelo" => $modelo,
+       "cantidad" => $cantidad
     ];
 
     $productos[] = $producto;
