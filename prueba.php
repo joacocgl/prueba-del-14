@@ -11,8 +11,10 @@ function agregarProducto(&$productos, $nombre, $valor, $modelo, $cantidad) {
 
     $productos[] = $producto;
 
-    echo "Producto agregado exitosamente.\n";
+    echo "Producto agregado exitosamente.";
 }
+
+agregarProducto($productos, "agregado", 13, "modelocualquiera", 2);
 
 print_r($productos);
 ?>
